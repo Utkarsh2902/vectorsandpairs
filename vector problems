@@ -1,0 +1,60 @@
+😎WAP to sort on the behalf of left and right pair element using vector and pairs
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+ vector<pair<int,int>> v={{1,2},{5,4},{7,9}};
+ vector<int> v1;
+  for(int i=0;i<3;i++)
+  {
+      if(v[i].first<v[i].second)
+      {
+      v1.push_back(v[i].first);
+      v1.push_back(v[i].second);
+      }
+      else if(v[i].first>v[i].second)
+      {
+      v1.push_back(v[i].second);
+      v1.push_back(v[i].first);
+      }
+  }
+  for(int i=0;i<v1.size();i++)
+  {
+      cout<<v1[i];
+  }
+
+    return 0;
+}
+😎WAP to sort on the behalf of sum using vector and pairs
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+  vector<pair<int,int>> v={{1,2},{5,4},{7,9}};
+  vector<int> v1;
+  for(int i=0;i<=2;i++)
+  {
+      int c,d;
+      c=v[i].first+v[i].second;
+      d=v[i+1].first+v[i+1].second;
+      if(c<d)
+      {
+      v1.push_back(c);
+      }
+      else
+      {
+      v1.push_back(d);
+      }
+      c=0;
+      d=0;
+  }
+  for(int i=0;i<v1.size();i++)
+  {
+      cout<<v1[i];
+      cout<<"\n";
+  }
+    return 0;
+}
+
