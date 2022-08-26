@@ -26,6 +26,12 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+
 😎WAP to sort on the behalf of sum using vector and pairs
 #include <iostream>
 #include <vector>
@@ -55,6 +61,74 @@ int main()
       cout<<v1[i];
       cout<<"\n";
   }
+    return 0;
+}
+
+
+
+
+
+
+😎WAP nested vector and pair dynamically
+#include<bits/stdc++.h>
+using namespace std;
+void printvect(vector<pair<int,int>> v)
+{
+    for(int i=0;i<v.size();i++)
+    {
+     cout<<v[i].first<<""<<v[i].second;
+    }
+    
+}
+int main()
+{
+    vector<pair<int,int>> v;
+    int n;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+        int x,y;
+        cin>>x>>y;
+        v.push_back({x,y});
+    }
+    printvect(v);
+    return 0;
+}
+
+
+
+
+
+
+😎WAP array of vectors dynamically
+#include<bits/stdc++.h>
+using namespace std;
+void printvect(vector<int> &v)
+{
+    for(int i=0;i<v.size();i++)
+    {
+     cout<<v[i]<<"";
+    }
+    cout<<endl;
+    
+}
+int main()
+{
+    int N,i;
+    cin>>N;
+    vector<int> v[N];
+    for(int i=0;i<N;i++)
+    {
+        int n;
+        cin>>n;
+       for(int j=0;j<n;j++)
+        {
+        int x;
+        cin>>x;
+        v[i].push_back(x);
+    }
+    printvect(v[i]);
+    }
     return 0;
 }
 
