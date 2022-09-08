@@ -41,3 +41,36 @@ int main()
     
     return 0;
 }
+
+
+
+
+
+
+😎WAP to perform RANGE based loops and auto keywords in vector and pairs using iterators
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+     
+     vector<pair<int,int>> v={{1,2},{2,3},{1,1}};
+    //vector<pair<int,int>>::iterator it;
+   /* for(it=v.begin();it!=v.end();it++)
+    {
+    //cout<<(*it).first<<endl<<(*it).second<<endl;
+    //other way to impliment iterator 
+    cout<<(it->first)<<" "<<(it->second);
+        
+    }*/
+    //range based loop
+    /*for(pair<int,int> value: v)
+    {
+        cout<<value.first<<endl<<value.second;
+   }*/
+   //use of auto keyword
+     for(auto value: v)
+    {
+        cout<<value.first<<endl<<value.second;
+   }
+    return 0;
+}
