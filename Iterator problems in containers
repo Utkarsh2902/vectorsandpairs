@@ -1,0 +1,43 @@
+😎WAP to perform vector using iterators
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+     vector<int> v={1,2,3};
+     for(int i=0;i<v.size();i++)
+     {
+         cout<<v[i];
+     }
+     //otherway to call
+     vector<int> v={1,2,3};
+    vector<int>::iterator it;
+    for(it=v.begin();it!=v.end();it++)
+    {
+    cout<<(*it);
+    }
+    
+    return 0;
+}
+
+
+
+
+😎WAP to perform vector and pairs using iterators
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+     
+     vector<pair<int,int>> v={{1,2},{2,3},{1,1}};
+    vector<pair<int,int>>::iterator it;
+    for(it=v.begin();it!=v.end();it++)
+    {
+    //cout<<(*it).first<<endl<<(*it).second<<endl;
+    //other way to impliment iterator 
+    cout<<(it->first)<<" "<<(it->second);
+        
+    }
+    
+    return 0;
+}
