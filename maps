@@ -1,0 +1,22 @@
+😎implimentation of maps using iterator with method 1 and 2;
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+ map<int,string> m={{1,"abc"},{5,"bcc"},{3,"llb"}};
+ map<int,string> :: iterator it;
+ //orignal
+ for(it=m.begin();it!=m.end();it++)
+ {
+     cout<<(*it).first<<" "<<(*it).second<<endl;
+ }
+ //advance
+ for(auto &pr:m)
+ {
+     cout<<pr.first<<" "<<pr.second<<endl;
+ }
+    return 0;
+}
