@@ -20,3 +20,50 @@ int main()
  }
     return 0;
 }
+
+
+
+
+
+
+
+😎implimentation of maps using find() and erase();
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+ map<int,string> m={{1,"abc"},{5,"bcc"},{3,"llb"}};
+ map<int,string> :: iterator it;
+ for(it=m.begin();it!=m.end();it++)
+ {
+     
+     cout<<(*it).first<<" "<<(*it).second<<endl;
+    m.erase(it);
+     
+ }
+ 
+ for(auto &pr:m)
+ {
+     cout<<pr.first<<" "<<pr.second<<endl;
+ }
+  
+ auto it=m.find(3);
+
+if(it==m.end())
+{
+  cout<<"no value";
+}
+else
+{
+    cout<<(*it).first<<" "<<(*it).second<<endl;  
+}
+
+
+    return 0;
+
+}
+
+
+
+
+
