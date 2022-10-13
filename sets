@@ -1,0 +1,22 @@
+😎WAP to impliment SETS and its Functions
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    set<string> s;//={"as","sdsa","acda"};
+    s.insert("ab");
+    s.insert("abc");
+    s.insert("aba");
+    
+    
+    auto it=s.find("ab");
+     s.erase(it); 
+     for(auto it:s)
+        {
+        cout<<it<<endl;
+        }
+    
+    return 0;
+}
